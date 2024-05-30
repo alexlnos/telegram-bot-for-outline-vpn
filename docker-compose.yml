@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - OUTLINE_API_URL_0=https://159.203.132.113:32231/2FjppibQGaQTH5cwrPkNQw
+      - BOT_API_TOKEN=6326661346:AAFjQgvj8QXki6kcDe5GTr_k7cmqgTw5z4M
+      - MONITOR_API_TOKEN=6326661346:AAFjQgvj8QXki6kcDe5GTr_k7cmqgTw5z4M
+      - ADMIN_CHAT_ID=182957384
+      - ADMIN_USERNAME_IN_HELP_MESSAGE=@alexlnos
+    restart: always
